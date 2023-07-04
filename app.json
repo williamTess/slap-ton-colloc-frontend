@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "slap-ton-colloc",
+    "slug": "slap-ton-colloc"
+  }
+}
