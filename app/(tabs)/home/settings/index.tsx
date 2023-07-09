@@ -4,7 +4,7 @@ import React from "react";
 const settingsPage = () => {
   return (
     <View>
-      <Text>settingsPage</Text>
+      <Text>settingsPage test affichage</Text>
     </View>
   );
 };

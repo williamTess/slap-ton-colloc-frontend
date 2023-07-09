@@ -1,10 +1,19 @@
 import { Tabs } from "expo-router";
+import tabIcon from "../../component/tabs/tabIcon";
+import { ROUTE_NAME } from "../../common/enum";
 
 const StackLayout = () => {
   return (
-    <Tabs>
-      <Tabs.Screen name={"home"} options={{ headerShown: false }} />
-      <Tabs.Screen name={"list"} options={{ headerShown: false }} />
+    <Tabs
+      screenOptions={({ route }) => ({
+        tabBarIcon: (icon) => tabIcon({ route, icon }),
+        tabBarActiveTintColor: "tomato",
+        tabBarInactiveTintColor: "gray",
+      })}
+    >
+      <Tabs.Screen name={ROUTE_NAME.HOME} options={{ headerShown: false }} />
+      <Tabs.Screen name={ROUTE_NAME.GROUP} options={{ headerShown: false }} />
+      <Tabs.Screen name={ROUTE_NAME.ACCOUNT} options={{ headerShown: false }} />
     </Tabs>
   );
 };

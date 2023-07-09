@@ -5,6 +5,9 @@
       "bundler": "metro"
     },
     "name": "slap-ton-colloc",
-    "slug": "slap-ton-colloc"
+    "slug": "slap-ton-colloc",
+    "plugins": [
+      "expo-localization"
+    ]
   }
 }

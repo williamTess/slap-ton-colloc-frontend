@@ -1,0 +1,9 @@
+{
+  "pages": {
+    "home": {
+      "title": "Accueil",
+      "subTitle": "Sous-titre",
+      "text": "Du texte aléatoire"
+    }
+  }
+}
