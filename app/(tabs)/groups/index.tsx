@@ -4,7 +4,7 @@ import { Link } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { ROUTE_URL } from "../../../common/enum";
 
-const group = () => {
+const groupsPage = () => {
   const { t } = useTranslation("pages");
   return (
     <View>
@@ -14,4 +14,4 @@ const group = () => {
   );
 };
 
-export default group;
+export default groupsPage;

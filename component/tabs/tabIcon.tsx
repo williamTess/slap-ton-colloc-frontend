@@ -14,12 +14,15 @@ const tabIcon = ({ route, icon }: Props): ReactNode => {
   let name: any;
 
   if (route.name === "home") {
-    name = icon.focused ? "home" : "home-outline";
+    name = "home";
   } else if (route.name === "account") {
-    name = icon.focused ? "person-circle" : "person-circle-outline";
-  } else if (route.name === "group") {
-    name = icon.focused ? "list" : "list-outline";
+    name = "person-circle";
+  } else if (route.name === "groups") {
+    name = "list";
   }
+
+  if (icon.focused) name += "-outline";
+
   return <Ionicons name={name} size={icon.size} color={icon.color} />;
 };
 

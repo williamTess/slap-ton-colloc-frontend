@@ -9,11 +9,12 @@ const StackLayout = () => {
         tabBarIcon: (icon) => tabIcon({ route, icon }),
         tabBarActiveTintColor: "tomato",
         tabBarInactiveTintColor: "gray",
+        headerShown: false,
       })}
     >
-      <Tabs.Screen name={ROUTE_NAME.HOME} options={{ headerShown: false }} />
-      <Tabs.Screen name={ROUTE_NAME.GROUP} options={{ headerShown: false }} />
-      <Tabs.Screen name={ROUTE_NAME.ACCOUNT} options={{ headerShown: false }} />
+      <Tabs.Screen name={ROUTE_NAME.HOME} />
+      <Tabs.Screen name={ROUTE_NAME.GROUP} />
+      <Tabs.Screen name={ROUTE_NAME.ACCOUNT} />
     </Tabs>
   );
 };
